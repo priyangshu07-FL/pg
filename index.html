@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Himgiri Girls PG & Hostel | New Town Kolkata</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Himgiri Girls PG & Hostel in New Town, Kolkata. Safe & cozy accommodation with meals, Wi-Fi, housekeeping, and 24×7 security. Call 9123917587 to book a visit." />
+  <meta name="keywords" content="girls pg, hostel, new town, kolkata, himgiri girls hostel, accommodation for students, ladies pg" />
+  <meta property="og:title" content="Himgiri Girls PG & Hostel" />
+  <meta property="og:description" content="Bright rooms, homely food & secure environment in New Town, Kolkata." />
+  <meta property="og:image" content="images/WhatsApp%20Image%202025-08-16%20at%2013.03.08_74223b31.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23f59e0b"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Poppins" font-size="28" font-weight="700" fill="%231f1300">HG</text></svg>'>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-grad-1:#fff7ed;--bg-grad-2:#ffedd5;--brand:#f59e0b;--brand-600:#b45309;
+      --ink:#1f2937;--muted:#6b7280;--card:#fff;--soft-accent:#fde68a;--soft-rose:#fecdd3;--soft-sky:#bae6fd;--ring:rgba(245,158,11,.3)
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);
+      background:linear-gradient(180deg,var(--bg-grad-1),var(--bg-grad-2));-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin:0 auto}
+    .section{padding:64px 0}
+    .grid{display:grid;gap:24px}
+
+    /* Nav (normal, non-sticky) */
+    .nav{background:rgba(255,255,255,.7);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-weight:700}
+    .brand-badge{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--soft-rose),var(--soft-accent));display:grid;place-items:center;font-weight:800;color:#7c2d12;box-shadow:0 4px 14px rgba(245,158,11,.25)}
+    .nav-links{display:flex;align-items:center;gap:6px}
+    .nav-links a{margin-left:6px;text-decoration:none;font-weight:700;color:var(--brand-600);padding:10px 12px;border-radius:999px;border:2px solid transparent}
+    .nav-links a.btn{background:var(--brand);color:#1f1300;border-color:rgba(0,0,0,.06);box-shadow:0 8px 18px rgba(245,158,11,.28);transition:.2s}
+    .nav-links a.btn:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(245,158,11,.35)}
+    /* Mobile nav */
+    .hamburger{display:none;border:1px solid rgba(0,0,0,.08);background:#fff;border-radius:10px;padding:8px 10px;cursor:pointer}
+    .hamburger span{display:block;width:22px;height:2px;background:#1f2937;margin:4px 0}
+    @media (max-width:860px){
+      .nav-links{display:none;position:absolute;left:0;right:0;top:58px;background:#fff;padding:10px;border-bottom:1px solid rgba(0,0,0,.06)}
+      .nav-links.show{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+      .nav-links a{border:1px solid rgba(0,0,0,.06);text-align:center}
+      .nav-links a.btn{grid-column:1/-1}
+      .hamburger{display:block}
+    }
+
+    /* Hero + slideshow */
+    .hero{padding:64px 0 44px}
+    .hero-wrap{display:grid;gap:28px;grid-template-columns:1.1fr .9fr;align-items:center}
+    @media (max-width:980px){.hero-wrap{grid-template-columns:1fr}}
+    .kicker{color:var(--brand-600);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem}
+    h1{font-family:'Poppins',sans-serif;font-size:clamp(1.9rem,5.4vw,3.1rem);line-height:1.1;margin:8px 0 12px}
+    .hero p{color:var(--muted);font-size:1.05rem}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn-primary,.btn-ghost{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:14px;border:2px solid transparent;transition:.2s}
+    .btn-primary{background:var(--brand);color:#1f1300;box-shadow:0 10px 22px rgba(245,158,11,.34)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(245,158,11,.4)}
+    .btn-ghost{background:#fff;border-color:var(--ring);color:var(--brand-600)}
+    .btn-ghost:hover{background:#fff7ed}
+    .hero-card{background:radial-gradient(1200px 500px at 70% -10%,var(--soft-accent),transparent),radial-gradient(800px 400px at -10% 120%,var(--soft-sky),transparent),#fff;border:1px solid rgba(0,0,0,.06);box-shadow:0 24px 60px rgba(17,24,39,.1);border-radius:24px;padding:16px;display:grid;gap:12px}
+    .slide-wrap{position:relative;border-radius:16px;overflow:hidden;height:320px}
+    @media (max-width:520px){.slide-wrap{height:240px}}
+    .slide-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s ease}
+    .slide-wrap img.active{opacity:1}
+    .dots{display:flex;gap:6px;position:absolute;right:10px;bottom:10px;background:rgba(255,255,255,.75);border-radius:999px;padding:6px 8px}
+    .dot{width:8px;height:8px;border-radius:999px;background:#bbb;cursor:pointer}
+    .dot.active{background:var(--brand-600)}
+    .arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border-radius:999px;border:1px solid rgba(0,0,0,.06);width:36px;height:36px;display:grid;place-items:center;cursor:pointer}
+    .arrow.left{left:10px}.arrow.right{right:10px}
+
+    /* Sections */
+    .section h2{font-family:'Poppins',sans-serif;font-size:clamp(1.5rem,3vw,2.1rem);margin:0 0 10px}
+    .section p.lead{color:var(--muted);margin-top:0}
+
+    /* Amenities */
+    .amenities{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){.amenities{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.amenities{grid-template-columns:1fr}}
+    .amenity{background:var(--card);border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:18px;display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center;box-shadow:0 12px 26px rgba(17,24,39,.06);transition:transform .2s}
+    .amenity:hover{transform:translateY(-3px)}
+    .icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--soft-accent),var(--soft-rose));box-shadow:inset 0 0 0 2px rgba(255,255,255,.7),0 10px 18px rgba(245,158,11,.18)}
+    .amenity h3{margin:0;font-size:1.02rem}
+    .amenity p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+
+    /* Pricing */
+    .pricing{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){.pricing{grid-template-columns:1fr}}
+    .plan{background:var(--card);border:1px solid rgba(0,0,0,.06);border-radius:20px;padding:22px;box-shadow:0 18px 38px rgba(17,24,39,.08)}
+    .plan .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff7ed;color:var(--brand-600);font-weight:800;font-size:.8rem}
+    .price{font-family:'Poppins';font-size:2rem;margin:8px 0 6px}
+    .features{list-style:none;padding:0;margin:12px 0 16px;color:var(--ink)}
+    .features li{display:flex;gap:10px;align-items:baseline;margin:8px 0}
+    .features li::before{content:'✓';font-weight:900;color:var(--brand-600)}
+
+    /* Gallery */
+    .gallery{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.gallery{grid-template-columns:1fr}}
+    .shot{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,.06);box-shadow:0 16px 32px rgba(17,24,39,.08);cursor:pointer}
+    .shot img{width:100%;height:220px;object-fit:cover;transition:transform .6s ease}
+    .shot:hover img{transform:scale(1.05)}
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:100}
+    .lightbox img{max-width:92vw;max-height:86vh;border-radius:12px}
+    .lightbox.show{display:flex}
+    .lightbox:after{content:'×';position:absolute;top:18px;right:22px;font-size:34px;color:#fff;cursor:pointer}
+
+    /* Contact */
+    .contact-card{background:linear-gradient(135deg,#fff,#fff7ed);border:1px solid rgba(0,0,0,.06);border-radius:20px;padding:24px;box-shadow:0 18px 38px rgba(17,24,39,.08);display:grid;gap:16px}
+    .contact-row{display:flex;flex-wrap:wrap;gap:10px}
+    .contact-row a{text-decoration:none}
+    /* On wide screens, map and address can sit side by side if desired later */
+
+    footer{padding:36px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(0,0,0,.06)}
+
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <button class="hamburger" aria-label="Toggle menu" id="menuBtn">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="brand-badge" aria-hidden="true">HG</div>
+        <div>Himgiri Girls PG and Hostel</div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#amenities">Amenities</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <div class="kicker reveal">Welcome to</div>
+        <h1 class="reveal" style="transition-delay:.05s">Himgiri Girls PG and Hostel</h1>
+        <p class="reveal hero" style="transition-delay:.1s">
+          A warm, safe and cozy home for students and working professionals. Comfortable rooms, homely food, and caring staff — all in a secure environment.
+        </p>
+        <div class="cta-row reveal" style="transition-delay:.15s">
+          <a class="btn-primary" href="#rooms">View Rooms & Pricing</a>
+          <a class="btn-ghost" href="https://wa.me/919123917587?text=Hi%20Himgiri%20Girls%20PG%2C%20I%27d%20like%20to%20know%20about%20room%20availability." target="_blank" rel="noopener">Talk on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Slideshow -->
+      <div class="hero-card reveal" style="transition-delay:.2s">
+        <div class="slide-wrap" id="hero-slides" aria-label="Photos of Himgiri Girls PG">
+          <!-- Building first -->
+          <img class="active" src="images/WhatsApp%20Image%202025-08-16%20at%2013.03.08_74223b31.jpg" alt="Himgiri Girls PG building front elevation" width="1400" height="933" fetchpriority="high" />
+          <img src="images/WhatsApp%20Image%202025-08-16%20at%2013.03.09_843e6875.jpg" alt="Building side view with balconies" width="1400" height="933" />
+          <img src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.57_61cd18ee.jpg" alt="Triple sharing room with natural light" width="1400" height="933" />
+          <div class="arrow left" aria-label="Previous slide" title="Previous">‹</div>
+          <div class="arrow right" aria-label="Next slide" title="Next">›</div>
+          <div class="dots" id="dots"></div>
+        </div>
+        <div style="display:grid;gap:8px">
+          <div style="font-weight:800;">Feels like home</div>
+          <div style="color:var(--muted);">Bright, airy rooms with ample storage, fresh linens, and friendly common spaces.</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Amenities -->
+  <section id="amenities" class="section">
+    <div class="container">
+      <h2 class="reveal">Amenities that matter</h2>
+      <p class="lead reveal" style="transition-delay:.05s">Everything you need for a safe and comfortable stay.</p>
+      <div class="grid amenities" style="margin-top:18px">
+        <div class="amenity reveal"><div class="icon">🏠</div><div><h3>Fully Furnished</h3><p>Beds with storage, wardrobes, study desks & chairs.</p></div></div>
+        <div class="amenity reveal" style="transition-delay:.02s"><div class="icon">❄️</div><div><h3>AC / Airy Rooms</h3><p>Air-conditioned and well-ventilated rooms for year-round comfort.</p></div></div>
+        <div class="amenity reveal" style="transition-delay:.04s"><div class="icon">📶</div><div><h3>High-Speed Wi-Fi</h3><p>Reliable internet for online classes and work-from-home.</p></div></div>
+        <div class="amenity reveal" style="transition-delay:.06s"><div class="icon">🍽️</div><div><h3>Homely Meals</h3><p>Nutritious vegetarian food with weekly menu rotation.</p></div></div>
+        <div class="amenity reveal" style="transition-delay:.08s"><div class="icon">🧹</div><div><h3>Daily Housekeeping</h3><p>Regular cleaning of rooms and common areas.</p></div></div>
+        <div class="amenity reveal" style="transition-delay:.1s"><div class="icon">🛡️</div><div><h3>24×7 Security</h3><p>CCTV, gated entry and resident warden for peace of mind.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms & Pricing -->
+  <section id="rooms" class="section" style="background:rgba(255,255,255,.6)">
+    <div class="container">
+      <h2 class="reveal">Rooms & Pricing</h2>
+      <p class="lead reveal" style="transition-delay:.05s">Choose what suits you. Flexible options for students and professionals.</p>
+      <div class="grid pricing" style="margin-top:18px">
+        <div class="plan reveal">
+          <span class="tag">Budget</span>
+          <div class="price">₹6,500 / month</div>
+          <ul class="features">
+            <li>Triple sharing, common washroom</li><li>Wi-Fi, housekeeping, laundry (paid)</li><li>2 meals + evening tea</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Enquire</a>
+        </div>
+        <div class="plan reveal" style="transition-delay:.05s">
+          <span class="tag">Popular</span>
+          <div class="price">₹8,500 / month</div>
+          <ul class="features">
+            <li>Twin sharing, attached washroom</li><li>Wi-Fi, housekeeping, laundry (weekly)</li><li>3 meals + snacks</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Enquire</a>
+        </div>
+        <div class="plan reveal" style="transition-delay:.1s">
+          <span class="tag">Premium</span>
+          <div class="price">₹11,000 / month</div>
+          <ul class="features">
+            <li>Single room with AC</li><li>Wi-Fi, daily housekeeping, laundry</li><li>3 meals + evening snacks</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Enquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="reveal">A peek inside</h2>
+      <p class="lead reveal" style="transition-delay:.05s">Bright rooms, cozy corners, and tidy spaces.</p>
+
+      <div class="grid gallery" style="margin-top:18px">
+        <!-- Building (also in hero) -->
+        <figure class="shot reveal">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2013.03.08_74223b31.jpg" alt="Himgiri Girls PG building front elevation" width="1400" height="933">
+        </figure>
+
+        <!-- Rest of your photos -->
+        <figure class="shot reveal" style="transition-delay:.03s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2013.03.09_843e6875.jpg" alt="Building side view with balconies" width="1400" height="933">
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.06s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.54_e5f38a17.jpg" alt="Hallway and entrance with glossy floor" width="1400" height="933">
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.09s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.55_b70a7488.jpg" alt="Twin sharing room with steel wardrobe" width="1400" height="933">
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.12s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.57_61cd18ee.jpg" alt="Triple sharing room with windows and curtains" width="1400" height="933">
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.15s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.58_d3cecd78.jpg" alt="Triple sharing beds with patterned curtains" width="1400" height="933">
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.18s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.57_f724f5d8.jpg" alt="Clean kitchen area with sink and counter" width="1400" height="933">
+        </figure>
+        <figure class="shot reveal" style="transition-delay:.21s">
+          <img loading="lazy" decoding="async" src="images/WhatsApp%20Image%202025-08-16%20at%2012.55.58_6426ce5c.jpg" alt="Neat washroom with shower and geyser" width="1400" height="933">
+        </figure>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox"><img alt=""></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section" style="padding-bottom:80px">
+    <div class="container">
+      <h2 class="reveal">Get in touch</h2>
+      <p class="lead reveal" style="transition-delay:.05s">Call, WhatsApp or email us to book a visit or check availability.</p>
+
+      <div class="contact-card reveal" style="transition-delay:.1s">
+        <div class="contact-row">
+          <a class="btn-primary" href="tel:+919123917587">Call: +91 91239 17587</a>
+          <a class="btn-ghost" href="https://wa.me/919123917587?text=Hi%20Himgiri%20Girls%20PG%2C%20I%27d%20like%20to%20book%20a%20visit%20or%20check%20availability." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn-ghost" href="mailto:janasubir251@gmail.com">janasubir251@gmail.com</a>
+          <a class="btn-primary" href="https://wa.me/919123917587?text=Hi%2C%20I%20want%20to%20book%20a%20room%20at%20Himgiri%20Girls%20PG." target="_blank" rel="noopener">Book Now</a>
+        </div>
+
+        <div style="color:var(--muted)">
+          Address: 195, Uniworld City, Action Area 3B, Newtown, New Town, West Bengal 700160
+        </div>
+
+        <div style="display:grid;gap:10px">
+          <!-- Responsive map embed -->
+          <iframe id="map-embed" title="Himgiri Girls PG Location" width="100%" height="320" style="border:0;border-radius:14px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div>
+            <a class="btn-ghost" href="https://maps.app.goo.gl/Y6E4ZpjnPtoBE6GV6" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Himgiri Girls PG and Hostel • All rights reserved</div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn?.addEventListener('click', ()=> navLinks.classList.toggle('show'));
+    // Close menu on link tap (mobile)
+    navLinks.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> navLinks.classList.remove('show')));
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target);} });
+    },{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    // Hero slideshow
+    const slideWrap = document.getElementById('hero-slides');
+    const slides = Array.from(slideWrap.querySelectorAll('img'));
+    const dotsWrap = document.getElementById('dots');
+    let idx=0, timer=null;
+
+    function go(i){
+      slides[idx].classList.remove('active');
+      dotsWrap.children[idx].classList.remove('active');
+      idx = (i + slides.length) % slides.length;
+      slides[idx].classList.add('active');
+      dotsWrap.children[idx].classList.add('active');
+    }
+    function start(){ timer = setInterval(()=>go(idx+1), 5000); }
+    function stop(){ clearInterval(timer); }
+
+    slides.forEach((_, i)=>{
+      const d=document.createElement('div');
+      d.className='dot'+(i===0?' active':'');
+      d.addEventListener('click', ()=>{ stop(); go(i); start(); });
+      dotsWrap.appendChild(d);
+    });
+    slideWrap.querySelector('.arrow.left').onclick = ()=>{ stop(); go(idx-1); start(); };
+    slideWrap.querySelector('.arrow.right').onclick = ()=>{ stop(); go(idx+1); start(); };
+    start();
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = lightbox.querySelector('img');
+    document.querySelectorAll('#gallery .shot img').forEach(img=>{
+      img.addEventListener('click', ()=>{
+        lbImg.src = img.src; lbImg.alt = img.alt;
+        lightbox.classList.add('show');
+      });
+    });
+    lightbox.addEventListener('click', ()=> lightbox.classList.remove('show'));
+
+    // Map embed (using address so embed works reliably)
+    const address = '195, Uniworld City, Action Area 3B, Newtown, New Town, West Bengal 700160';
+    const map = document.getElementById('map-embed');
+    map.src = 'https://www.google.com/maps?q=' + encodeURIComponent(address) + '&z=16&output=embed';
+  </script>
+</body>
+</html>
